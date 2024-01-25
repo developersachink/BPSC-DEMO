@@ -1,0 +1,57 @@
+<head>
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="/css/all.css" />
+    <style>
+      h2{
+        margin-left: 325px !important;
+        margin-top: -20px; 
+      }
+      #update-form{
+        padding: 40px;
+margin-left: 300px !important;
+#backbutton{
+  margin-left: 300px!important;
+}
+      }
+
+    </style>
+    
+  </head>
+  <!-- font awesome js -->
+  <script src="/js/all.js"></script>
+  <!-- js bundle bootstrap -->
+  <script src="/js/bootstrap.bundle.js"></script>
+  <%- include('./partials/siderbar.ejs') %>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-9 mt-5">
+        <h2 id="h2" class="alert alert-success text-center">Update Teacher</h2>
+        <form id="update-form" method="post"  action="/Teacherlist/update/<%= data._id %>">
+          <div class="mb-3">
+            <label for="name" class="form-label">Teacher Name</label>
+            <input type="text" class="form-control" id="name" name="name" value="<%= data.name %>"/>
+          <div class="mb-3">
+            <label for="age" class="form-label">Age</label>
+            <input type="text" class="form-control" id="age" name="age"  value="<%= data.age %>" />
+          </div>
+          <div class="mb-3">
+            <label for="Salary" class="form-label">Salary</label>
+            <input type="text" class="form-control" id="Salary" name="Salary"  value="<%= data.salary %>" />
+           </div>
+           <div class="mb-3">
+            <label for="district" class="form-label">District</label>
+            <input type="text" class="form-control" id="district" name="district"   value="<%= data.district %>" />
+          </div>
+          <div class="mb-3">
+            <label for="schoolname" class="form-label">Schoolname</label>
+            <input type="text" class="form-control" id="schoolname" name="schoolname" value="<%= data.schoolname %>"  />
+          </div>
+
+
+          <button type="submit" class="btn btn-warning">Update</button>
+          <button id="backbutton" type="submit" class="btn btn-secondary">Back to Home</button>
+        </form>
+      </div>
+    </div>
+  </div>  

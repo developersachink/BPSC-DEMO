@@ -1,0 +1,114 @@
+<head>
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <!-- font awesome -->
+  <link rel="stylesheet" href="css/all.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css"
+  />
+  <linK
+    rel="stylesheet"
+    href="https://cdn.datatables.net/buttons/2.4.2/css/buttons.dataTables.min.css"
+  />
+  <style>
+    #h1 {
+      margin-left: 380px;
+      margin-top: -60px;
+      padding: 5px;
+    }
+    #teachertable {
+      margin-left: 180px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<!-- font awesome js -->
+<script src="js/all.js"></script>
+<!-- js bundle bootstrap -->
+<script src="js/bootstrap.bundle.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+<script src=" https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js "></script>
+<script  src=" https://cdn.datatables.net/buttons/2.4.2/js/dataTables.buttons.min.js "></script>
+<script  src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+<script src=" https://cdn.datatables.net/buttons/2.4.2/js/buttons.html5.min.js "></script>
+<script  src="https://cdn.datatables.net/buttons/2.4.2/js/buttons.print.min.js" ></script>
+
+<%-include('./partials/siderbar.ejs') %>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-9 mt-5">
+      <h2 id="h1" class="alert alert-danger text-center">
+        LIST OF ADDED TEACHER OF TRE-2
+      </h2>
+
+      <table id="teachertable" class="display" style="width:100%">
+        <thead>
+          <tr>
+            <th scope="col">No</th>
+            <th scope="col">TeacherName</th>
+            <th scope="col">Age</th>
+            <th scope="col">Salary</th>
+            <th scope="col">Schoolname</th>
+            <th scope="col">District</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <% var i=1 %> <% data.forEach((item)=>{ %>
+          <tr>
+            <td><%= i++ %></td>
+            <td><%= item.name %></td>
+            <td><%= item.age %></td>
+            <td><%= item.salary %></td>
+            <td><%= item.schoolname %></td>
+            <td><%= item.district %></td>
+            <td>
+           
+             
+              <form
+                action="/Teacherlist/edit/<%= item._id %>"
+                method="get"
+                class="d-inline"
+              >
+                <button type="submit" class="btn">
+                  <i class="fas fa-pen-square text-info"></i>
+                </button>
+              </form>
+
+              <form
+                action="/Teacherlist/delete/<%= item._id %>"
+                method="post"
+                class="d-inline"
+              >
+                <button type="submit" class="btn">
+                  <i class="fas fa-trash text-danger"></i>
+                </button>
+              </form>
+            </td>
+          </tr>
+          <% }) %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<script>
+$(document).ready(function() {
+ var table= $('#teachertable').DataTable( {
+      dom: 'Bfrtip',
+      buttons: [
+      { extend: 'excel', text: 'Export to Excel' },
+      { extend: 'pdf', text: 'Export to PDF' },
+      { extend: 'print', text: 'Print' }
+    ],
+      columnDefs: [
+      { type: 'num', targets: 0 }, // Assuming the first column is numeric
+      // Add more definitions for other columns if needed
+    ]
+  } );
+} );
+</script>

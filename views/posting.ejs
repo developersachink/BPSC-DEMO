@@ -1,0 +1,2798 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GOV OF BIHAR</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/image/gov1.png" />
+
+    <link href="/css/form.css" rel="stylesheet" />
+    <link href="/css/styles.css" rel="stylesheet" />
+    <link href="/css/codemirror.css" rel="stylesheet" />
+    <link href="/css/darcula.css" rel="stylesheet" />
+    <link href="/css/xq-light.css" rel="stylesheet" />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="/css/new_reg_form.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" language="javascript">
+      function DisableBackButton() {
+        window.history.forward();
+      }
+      DisableBackButton();
+      window.onload = DisableBackButton;
+      window.onpageshow = function (evt) {
+        if (evt.persisted) DisableBackButton();
+      };
+      window.onunload = function () {
+        void 0;
+      };
+      window.onload = function () {
+        noBack();
+      };
+      function noBack() {
+        window.history.forward();
+      }
+      function changeHashOnLoad() {
+        window.location.href += "#";
+        setTimeout("changeHashAgain()", "50");
+      }
+
+      function changeHashAgain() {
+        window.location.href += "1";
+      }
+
+      var storedHash = window.location.hash;
+      window.setInterval(function () {
+        if (window.location.hash != storedHash) {
+          window.location.hash = storedHash;
+        }
+      }, 50);
+    </script>
+  </head>
+
+  <body
+    oncontextmenu="return false;"
+    oncut="return false;"
+    oncopy="return false;"
+    onpaste="return false;"
+    onload="changeHashOnLoad(); "
+    onpageshow="if (event.persisted) noBack();"
+  >
+    <header>
+      <nav b-nj29cm8vbb class="header">
+        <div b-nj29cm8vbb class="container-fluid no-padding">
+          <img width="100%" style="height:78px" src="/image/gov12.png" />
+        </div>
+        <div b-nj29cm8vbb style="text-align: center">
+          <div b-nj29cm8vbb class="demo">
+            <asp:Label
+              b-nj29cm8vbb
+              ID="lblRRB"
+              runat="server"
+              Text=""
+            ></asp:Label>
+          </div>
+        </div>
+        <div b-nj29cm8vbb class="container text-center">
+          <div b-nj29cm8vbb class="raw">
+            <div b-nj29cm8vbb class="col-sm-12">
+              <div b-nj29cm8vbb class="col-sm-4 cssbaner"></div>
+              <div b-nj29cm8vbb class="col-sm-6 cssbaner">
+                BIHAR TEACHER COMPETITIVE EXAMINATION - 2023
+              </div>
+              <div b-nj29cm8vbb class="col-sm-4 cssbaner"></div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div b-nj29cm8vbb class="container">
+      <div b-nj29cm8vbb>
+        <div b-nj29cm8vbb class="row" style="display: none">
+          <div b-nj29cm8vbb class="col-sm-6">
+            <label b-nj29cm8vbb for="" class="field-title">
+              Registration Number :
+            </label>
+          </div>
+          <div b-nj29cm8vbb class="col-sm-6" style="text-align: right">
+            <label b-nj29cm8vbb for="" class="field-title">
+              Applicant Name :
+            </label>
+          </div>
+        </div>
+        <!-- Other layout content goes here -->
+      </div>
+
+      <main b-nj29cm8vbb role="main" class="pb-3">
+        <head>
+          <meta name="viewport" content="width=device-width" />
+
+          <script src="/javascripts/SPreg.js"></script>
+
+          <style type="text/css">
+            .greentext {
+              color: green;
+              font-weight: 600;
+              font-size: 11px;
+            }
+
+            label {
+              display: initial;
+              white-space: pre-wrap;
+            }
+
+            fieldset {
+              min-width: 0;
+              padding: 14px !important;
+              margin: 8px !important;
+              border-radius: 5px 5px 5px 5px;
+              padding: 0.35em 0.625em 0.75em;
+              margin: 0 2px;
+              border: 1px solid #ccc9c9;
+              background-color: white;
+            }
+
+            legend {
+              border-bottom: 1px solid #c72929;
+              background: rgba(255, 255, 255, 0.03);
+              padding: 0.5em 2em !important;
+              text-transform: uppercase;
+              font-size: 13px;
+              font-weight: bold;
+              color: #c72929;
+              border-radius: 5px 5px 5px 5px;
+              -moz-box-shadow: inset 0 0 10px #000000;
+              -webkit-box-shadow: inset 0 0 10px #000000;
+              box-shadow: inset 0 0 10px #dedddd;
+            }
+
+            table tr td {
+              border: 1px solid #bdbdbd;
+            }
+
+            th {
+              border: 1px solid white;
+            }
+
+            table tr td label {
+              font-weight: 500;
+            }
+
+            .word-wrap {
+              padding-top: 0px !important;
+              width: 149px !important;
+              word-wrap: break-word !important;
+            }
+
+            .word-wrap label {
+              font-weight: bold !important;
+            }
+
+            .form-page-title::before,
+            .form-page-title::after {
+              border-bottom: 0px solid #ffda44;
+            }
+
+            .modal-header {
+              display: inline;
+            }
+          </style>
+        </head>
+
+        <section style="margin-top: 1em">
+          <div class="container">
+            <div class="row">
+              <form
+                action="/"
+                id="Add_Preg"
+                method="post"g
+                onkeydown="return event.keyCode!=13"
+              >
+                <div class="col-md-12">
+                  <div class="cat_head modal-title">
+                    <h2 class="form-page-title">Preliminary Stage</h2>
+                  </div>
+                </div>
+                <fieldset>
+                  <legend><h4>Personal Details</h4></legend>
+
+                  <div class="col-md-12">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <span class="required">*</span
+                          ><label class="control-label" for="bain_FirstName"
+                            >Applicant&#x27;s First Name</label
+                          >
+                          <input
+                            class="form-control"
+                            onkeyup="this.value = this.value.toUpperCase();"
+                            autocomplete="off"
+                            type="text"
+                            data-val="true"
+                            data-val-length="Max 50 characters only"
+                            data-val-length-max="50"
+                            data-val-regex="Invalid Format. Do not use dot(.) or any special character"
+                            data-val-regex-pattern="[A-Za-z ]*"
+                            data-val-required="Required"
+                            id="bain_FirstName"
+                            maxlength="50"
+                            name="bain_FirstName"
+                            value=""
+                          />
+                          <span
+                            class="text-danger field-validation-valid"
+                            data-valmsg-for="bain_FirstName"
+                            data-valmsg-replace="true"
+                          ></span>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label class="control-label" for="bain_LastName"
+                            >Last Name</label
+                          >
+                          <input
+                            class="form-control"
+                            onkeyup="this.value = this.value.toUpperCase();"
+                            autocomplete="off"
+                            type="text"
+                            data-val="true"
+                            data-val-length="Max 50 characters only"
+                            data-val-length-max="50"
+                            data-val-regex="Invalid Format. Do not use dot(.) or any special character"
+                            data-val-regex-pattern="[A-Za-z ]*"
+                            id="bain_LastName"
+                            maxlength="50"
+                            name="bain_LastName"
+                            value=""
+                          />
+                          <span
+                            class="text-danger field-validation-valid"
+                            data-valmsg-for="bain_LastName"
+                            data-valmsg-replace="true"
+                          ></span>
+                        </div>
+                      </div>
+
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <span class="required">*</span
+                          ><label class="control-label" for="bain_FullName"
+                            >Applicant&#x27;s Full Name</label
+                          >
+                          <input
+                            class="form-control"
+                            onkeyup="this.value = this.value.toUpperCase();"
+                            autocomplete="off"
+                            type="text"
+                            data-val="true"
+                            data-val-length="Max 50 characters only"
+                            data-val-length-max="50"
+                            data-val-regex="Invalid Format. Do not use dot(.) or any special character"
+                            data-val-regex-pattern="[A-Za-z ]*"
+                            data-val-required="Required"
+                            id="bain_FullName"
+                            maxlength="50"
+                            name="bain_FullName"
+                            value=""
+                          />
+                          <span
+                            class="text-danger field-validation-valid"
+                            data-valmsg-for="bain_FullName"
+                            data-valmsg-replace="true"
+                          ></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <span class="required">*</span
+                          ><label class="control-label" for="bain_DOB"
+                            >Date of Birth (DD-MM-YYYY)</label
+                          >
+                          <input
+                            autocomplete="off"
+                            onkeydown="return false;"
+                            class="form-control"
+                            placeholder="Date of birth"
+                            type="text"
+                            data-val="true"
+                            data-val-required="Required"
+                            id="bain_DOB"
+                            name="bain_DOB"
+                            value=""
+                          />
+                          <span
+                            class="text-danger field-validation-valid"
+                            data-valmsg-for="bain_DOB"
+                            data-valmsg-replace="true"
+                          ></span>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <span class="required">*</span
+                          ><label class="control-label" for="bain_FathersName"
+                            >Father&#x27;s Name</label
+                          >
+                          <input
+                            class="form-control"
+                            onkeyup="this.value = this.value.toUpperCase();"
+                            autocomplete="off"
+                            type="text"
+                            data-val="true"
+                            data-val-length="Max 50 characters only"
+                            data-val-length-max="50"
+                            data-val-regex="Invalid Format. Do not use dot(.) or any special character"
+                            data-val-regex-pattern="[A-Za-z ]*"
+                            data-val-required="Required"
+                            id="bain_FathersName"
+                            maxlength="50"
+                            name="bain_FathersName"
+                            value=""
+                          />
+                          <span
+                            class="text-danger field-validation-valid"
+                            data-valmsg-for="bain_FathersName"
+                            data-valmsg-replace="true"
+                          ></span>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <span class="required">*</span
+                          ><label class="control-label" for="bain_MothersName"
+                            >Mother&#x27;s Name</label
+                          >
+                          <input
+                            class="form-control"
+                            onkeyup="this.value = this.value.toUpperCase();"
+                            autocomplete="off"
+                            type="text"
+                            data-val="true"
+                            data-val-length="Max 50 characters only"
+                            data-val-length-max="50"
+                            data-val-regex="Invalid Format. Do not use dot(.) or any special character"
+                            data-val-regex-pattern="[A-Za-z ]*"
+                            data-val-required="Required"
+                            id="bain_MothersName"
+                            maxlength="50"
+                            name="bain_MothersName"
+                            value=""
+                          />
+                          <span
+                            class="text-danger field-validation-valid"
+                            data-valmsg-for="bain_MothersName"
+                            data-valmsg-replace="true"
+                          ></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-12">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <span class="required">*</span
+                          ><label class="control-label" for="bain_Genderid"
+                            >Gender</label
+                          >
+                          <select
+                            class="form-control"
+                            data-val="true"
+                            data-val-required="Required"
+                            id="bain_Genderid"
+                            name="bain_Genderid"
+                          >
+                            <option value="">Select</option>
+                            <option value="1">MALE</option>
+                            <option value="2">FEMALE</option>
+                            <option value="3">OTHERS</option>
+                          </select>
+                          <span
+                            class="text-danger field-validation-valid"
+                            data-valmsg-for="bain_Genderid"
+                            data-valmsg-replace="true"
+                          ></span>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <span class="required">*</span
+                          ><label class="control-label" for="bain_MobileNo"
+                            >Mobile Number</label
+                          >
+                          <input
+                            class="form-control"
+                            autocomplete="off"
+                            type="text"
+                            data-val="true"
+                            data-val-length="Invalid Mobile Number"
+                            data-val-length-max="10"
+                            data-val-length-min="10"
+                            data-val-regex="Entered Mobile Number format is not valid."
+                            data-val-regex-pattern="^\(?([6-9]{1})\)?[-. ]?([0-9]{5})[-. ]?([0-9]{4})$"
+                            data-val-required="Required"
+                            id="bain_MobileNo"
+                            maxlength="10"
+                            name="bain_MobileNo"
+                            value=""
+                          />
+                          <span
+                            class="text-danger field-validation-valid"
+                            data-valmsg-for="bain_MobileNo"
+                            data-valmsg-replace="true"
+                          ></span>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <span class="required">*</span
+                          ><label class="control-label" for="bain_ConfMobileNo"
+                            >Confirm Mobile Number</label
+                          >
+                          <input
+                            class="form-control"
+                            autocomplete="off"
+                            type="text"
+                            data-val="true"
+                            data-val-equalto="The Mobile Number and Confirm Mobile Number does not match."
+                            data-val-equalto-other="*.bain_MobileNo"
+                            data-val-length="Invalid Mobile Number"
+                            data-val-length-max="10"
+                            data-val-length-min="10"
+                            data-val-regex="Entered Mobile Number format is not valid."
+                            data-val-regex-pattern="^\(?([6-9]{1})\)?[-. ]?([0-9]{5})[-. ]?([0-9]{4})$"
+                            data-val-required="Required"
+                            id="bain_ConfMobileNo"
+                            maxlength="10"
+                            name="bain_ConfMobileNo"
+                            value=""
+                          />
+                          <span
+                            class="text-danger field-validation-valid"
+                            data-valmsg-for="bain_ConfMobileNo"
+                            data-valmsg-replace="true"
+                          ></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-12">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <span class="required">*</span
+                          ><label class="control-label" for="bain_Aadhar"
+                            >Aadhaar No.</label
+                          >
+                          <input
+                            maxlength="12"
+                            class="form-control"
+                            onkeyup="this.value = this.value.toUpperCase();"
+                            autocomplete="off"
+                            type="text"
+                            data-val="true"
+                            data-val-regex="Invalid Aadhar number."
+                            data-val-regex-pattern="^[0-9]{12}$"
+                            data-val-required="Required"
+                            id="bain_Aadhar"
+                            name="bain_Aadhar"
+                            value=""
+                          />
+                          <span
+                            class="text-danger field-validation-valid"
+                            data-valmsg-for="bain_Aadhar"
+                            data-valmsg-replace="true"
+                          ></span>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <span class="required">*</span
+                          ><label class="control-label" for="bain_Email"
+                            >E-Mail ID</label
+                          >
+                          <input
+                            class="form-control"
+                            autocomplete="off"
+                            type="email"
+                            data-val="true"
+                            data-val-length="Max 100 characters"
+                            data-val-length-max="100"
+                            data-val-regex="Please enter a valid e-mail address"
+                            data-val-regex-pattern="^([a-zA-Z0-9_\-\.]&#x2B;)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]&#x2B;\.)&#x2B;))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$"
+                            data-val-required="Required"
+                            id="bain_Email"
+                            maxlength="100"
+                            name="bain_Email"
+                            value=""
+                          />
+                          <span
+                            class="text-danger field-validation-valid"
+                            data-valmsg-for="bain_Email"
+                            data-valmsg-replace="true"
+                          ></span>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <span class="required">*</span
+                          ><label class="control-label" for="bain_ConfEmail"
+                            >Confirm E-Mail ID</label
+                          >
+                          <input
+                            class="form-control"
+                            autocomplete="off"
+                            type="email"
+                            data-val="true"
+                            data-val-equalto="The E-Mail ID and Confirm E-Mail ID does not match."
+                            data-val-equalto-other="*.bain_Email"
+                            data-val-length="Max 100 characters"
+                            data-val-length-max="100"
+                            data-val-regex="Please enter a valid e-mail address"
+                            data-val-regex-pattern="^([a-zA-Z0-9_\-\.]&#x2B;)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]&#x2B;\.)&#x2B;))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$"
+                            id="bain_ConfEmail"
+                            maxlength="100"
+                            name="bain_ConfEmail"
+                            value=""
+                          />
+                          <span
+                            class="text-danger field-validation-valid"
+                            data-valmsg-for="bain_ConfEmail"
+                            data-valmsg-replace="true"
+                          ></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                 
+                  
+                </fieldset>
+                <fieldset>
+                  <legend><h4>Other Information</h4></legend>
+                  
+                  <div class="col-md-12" id="div_DomicileJhalive">
+                    <div class="form-group">
+                      <div class="col-md-8">
+                        <span class="required">*</span
+                        ><label class="control-label" for="bain_isDomicileJha"
+                          >Are you local resident of Jharkhand?</label
+                        ><br />
+                      </div>
+                      <div class="col-md-4">
+                        <select
+                          class="form-control"
+                          data-val="true"
+                          data-val-required="Required"
+                          id="bain_isDomicileJha"
+                          name="bain_isDomicileJha"
+                        >
+                          <option value="">Select</option>
+                          <option value="YES">Yes</option>
+                          <option value="NO">No</option>
+                        </select>
+                        <span
+                          class="text-danger field-validation-valid"
+                          data-valmsg-for="bain_isDomicileJha"
+                          data-valmsg-replace="true"
+                        ></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="div_bain_hdistrictid" class="col-md-12">
+                    <div class="form-group">
+                      <div class="col-md-8">
+                        <span class="required">*</span
+                        ><label class="control-label" for="bain_hdistrictid"
+                          >Select your District of local residence</label
+                        >
+                      </div>
+                      <div class="col-md-4">
+                        <select
+                          class="form-control"
+                          data-val="true"
+                          data-val-required="Required"
+                          id="bain_hdistrictid"
+                          name="bain_hdistrictid"
+                        >
+                          <option value="">Select</option>
+                          <option value="1">BOKARO</option>
+                          <option value="2">CHATRA</option>
+                          <option value="3">DEOGHAR</option>
+                          <option value="4">DHANBAD</option>
+                          <option value="5">DUMKA</option>
+                          <option value="6">EAST SINGHBHUM</option>
+                          <option value="7">GARHWA</option>
+                          <option value="8">GIRIDIH</option>
+                          <option value="9">GODDA</option>
+                          <option value="10">GUMLA</option>
+                          <option value="11">HAZARIBAGH</option>
+                          <option value="12">JAMTARA</option>
+                          <option value="13">KHUNTI</option>
+                          <option value="14">KODERMA</option>
+                          <option value="15">LATEHAR</option>
+                          <option value="16">LOHARDAGA</option>
+                          <option value="17">PAKUR</option>
+                          <option value="18">PALAMU</option>
+                          <option value="19">RAMGARH</option>
+                          <option value="20">RANCHI</option>
+                          <option value="21">SAHEBGANJ</option>
+                          <option value="22">SARAIKELA KHARSAWAN</option>
+                          <option value="23">SIMDEGA</option>
+                          <option value="24">WEST SINGHBHUM</option>
+                        </select>
+                        <span
+                          class="text-danger field-validation-valid"
+                          data-valmsg-for="bain_hdistrictid"
+                          data-valmsg-replace="true"
+                        ></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <div class="col-md-8">
+                        <span class="required">*</span
+                        ><label class="control-label" for="bain_Categoryid"
+                          >Category</label
+                        >
+                      </div>
+                      <div class="col-md-4">
+                        <select
+                          class="form-control"
+                          data-val="true"
+                          data-val-required="Required"
+                          id="bain_Categoryid"
+                          name="bain_Categoryid"
+                        >
+                          <option value="">Select</option>
+                          <option value="1">UR</option>
+                          <option value="2">SC</option>
+                          <option value="3">ST</option>
+                          <option value="4">EBC-1</option>
+                          <option value="5">BC-2</option>
+                          <option value="6">EWS</option>
+                        </select>
+                        <span
+                          class="text-danger field-validation-valid"
+                          data-valmsg-for="bain_Categoryid"
+                          data-valmsg-replace="true"
+                        ></span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="divUPInfo">
+                    <div
+                      class="col-md-12"
+                      id="divPrimeST"
+                      style="display: none"
+                    >
+                      <div class="form-group">
+                        <div class="col-md-8">
+                          <span class="required">*</span
+                          ><label class="control-label" for="bain_Primitive"
+                            >Are you belong to Primitive tribe ?</label
+                          >
+                        </div>
+                        <div class="col-md-4">
+                          <select
+                            class="form-control"
+                            data-val="true"
+                            data-val-required="Required"
+                            id="bain_Primitive"
+                            name="bain_Primitive"
+                          >
+                            <option value="">Select</option>
+                            <option value="YES">Yes</option>
+                            <option value="NO">No</option>
+                          </select>
+                          <span
+                            class="text-danger field-validation-valid"
+                            data-valmsg-for="bain_Primitive"
+                            data-valmsg-replace="true"
+                          ></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="col-md-12"
+                      id="div_bain_Primitive"
+                      style="display: none"
+                    >
+                      <div class="form-group">
+                        <div class="col-md-8">
+                          <span class="required">*</span
+                          ><label
+                            class="control-label"
+                            for="bain_Primitivecaste"
+                            >Caste Name</label
+                          >
+                        </div>
+
+                        <div class="col-md-4">
+                          <select
+                            class="form-control"
+                            data-val="true"
+                            data-val-required="Required"
+                            id="bain_Primitivecaste"
+                            name="bain_Primitivecaste"
+                          >
+                            <option value="">Select</option>
+                            <option value="1">SAURIA PAHARIA</option>
+                            <option value="2">MAL PAHARIA</option>
+                            <option value="3">KORWA</option>
+                            <option value="4">PARHAIYA</option>
+                            <option value="5">BIRJIYA</option>
+                            <option value="6">BIRHOR</option>
+                            <option value="7">ASUR</option>
+                            <option value="8">SABAR</option>
+                          </select>
+                          <span
+                            class="text-danger field-validation-valid"
+                            data-valmsg-for="bain_Primitivecaste"
+                            data-valmsg-replace="true"
+                          ></span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div
+                      id="tr_bain_isExServiceman"
+                      runat="server"
+                      class="col-md-12"
+                      style="display: none"
+                    >
+                      <div class="form-group">
+                        <div class="col-md-8">
+                          <span class="required">*</span
+                          ><label
+                            class="control-label"
+                            for="bain_isExServiceman"
+                            >Are you an Ex-Servicemen?</label
+                          >
+                        </div>
+                        <div class="col-md-4">
+                          <select
+                            class="form-control"
+                            data-val="true"
+                            data-val-required="Required"
+                            id="bain_isExServiceman"
+                            name="bain_isExServiceman"
+                          >
+                            <option value="">Select</option>
+                            <option value="YES">Yes</option>
+                            <option value="NO">No</option>
+                          </select>
+                          <span
+                            class="text-danger field-validation-valid"
+                            data-valmsg-for="bain_isExServiceman"
+                            data-valmsg-replace="true"
+                          ></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="col-md-12"
+                      runat="server"
+                      id="Div_bain_isExServiceman"
+                      style="display: none"
+                    >
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <span class="required">*</span
+                          ><label
+                            class="control-label"
+                            for="bain_ExServicemanCertNo"
+                            >Certificate Number</label
+                          >
+                          <br />
+                          <input
+                            class="form-control"
+                            onkeyup="this.value = this.value.toUpperCase();"
+                            autocomplete="off"
+                            type="text"
+                            data-val="true"
+                            data-val-length="Max Certificate Number characters only"
+                            data-val-length-max="50"
+                            data-val-regex="Invalid Format"
+                            data-val-regex-pattern="[A-Za-z0-9 ./-]*"
+                            data-val-required="Required"
+                            id="bain_ExServicemanCertNo"
+                            maxlength="50"
+                            name="bain_ExServicemanCertNo"
+                            value=""
+                          />
+                          <span
+                            class="text-danger field-validation-valid"
+                            data-valmsg-for="bain_ExServicemanCertNo"
+                            data-valmsg-replace="true"
+                          ></span>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <span class="required">*</span
+                          ><label
+                            class="control-label"
+                            for="bain_ExServicemanIssueDate"
+                            >Date of issue of the Certificate</label
+                          >
+                          <input
+                            class="form-control"
+                            onkeydown="return false;"
+                            onkeyup="this.value = this.value.toUpperCase();"
+                            autocomplete="off"
+                            type="text"
+                            data-val="true"
+                            data-val-required="Required"
+                            id="bain_ExServicemanIssueDate"
+                            name="bain_ExServicemanIssueDate"
+                            value=""
+                          />
+                          <span
+                            class="text-danger field-validation-valid"
+                            data-valmsg-for="bain_ExServicemanIssueDate"
+                            data-valmsg-replace="true"
+                          ></span>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <span class="required">*</span>
+                          <label
+                            class="control-label"
+                            for="bain_ExServicemanStartDate"
+                            >Service Start Date</label
+                          >
+                          <input
+                            class="form-control"
+                            onkeydown="return false;"
+                            onkeyup="this.value = this.value.toUpperCase();"
+                            autocomplete="off"
+                            type="text"
+                            data-val="true"
+                            data-val-required="Required"
+                            id="bain_ExServicemanStartDate"
+                            name="bain_ExServicemanStartDate"
+                            value=""
+                          />
+                          <span
+                            class="text-danger field-validation-valid"
+                            data-valmsg-for="bain_ExServicemanStartDate"
+                            data-valmsg-replace="true"
+                          ></span>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <span class="required">*</span
+                          ><label
+                            class="control-label"
+                            for="bain_ExServicemanEndDate"
+                            >Service End Date</label
+                          >
+                          <input
+                            class="form-control"
+                            onkeydown="return false;"
+                            onkeyup="this.value = this.value.toUpperCase();"
+                            autocomplete="off"
+                            type="text"
+                            data-val="true"
+                            data-val-required="Required"
+                            id="bain_ExServicemanEndDate"
+                            name="bain_ExServicemanEndDate"
+                            value=""
+                          />
+                          <span
+                            class="text-danger field-validation-valid"
+                            data-valmsg-for="bain_ExServicemanEndDate"
+                            data-valmsg-replace="true"
+                          ></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="col-md-12"
+                      id="Div_Ishomegaurd"
+                      style="display: none"
+                    >
+                      <div class="form-group">
+                        <div class="col-md-8">
+                          <span class="required">*</span
+                          ><label class="control-label" for="bain_homegaurd"
+                            >Have you served in home guard of 3 year or at least
+                            six months?</label
+                          >
+                        </div>
+                        <div class="col-md-4">
+                          <select
+                            class="form-control"
+                            data-val="true"
+                            data-val-required="Required"
+                            id="bain_homegaurd"
+                            name="bain_homegaurd"
+                          >
+                            <option value="">Select</option>
+                            <option value="YES">Yes</option>
+                            <option value="NO">No</option>
+                          </select>
+                          <span
+                            class="text-danger field-validation-valid"
+                            data-valmsg-for="bain_homegaurd"
+                            data-valmsg-replace="true"
+                          ></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="col-md-12"
+                      id="Divhomegaurd"
+                      style="display: none"
+                    >
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <span class="required">*</span
+                          ><label
+                            class="control-label"
+                            for="bain_homegaurdissueDate"
+                            >Date of issuing of home guard experience
+                            certificate (DD-MM-YYYY)</label
+                          >
+
+                          <input
+                            class="form-control"
+                            onkeydown="return false;"
+                            onkeyup="this.value = this.value.toUpperCase();"
+                            autocomplete="off"
+                            type="text"
+                            data-val="true"
+                            data-val-required="Required"
+                            id="bain_homegaurdissueDate"
+                            name="bain_homegaurdissueDate"
+                            value=""
+                          />
+                          <span
+                            class="text-danger field-validation-valid"
+                            data-valmsg-for="bain_homegaurdissueDate"
+                            data-valmsg-replace="true"
+                          ></span>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <span class="required">*</span
+                          ><label class="control-label" for="bain_homegaurdSlno"
+                            >Home guard certificate serial No.</label
+                          >
+                          <br />
+                          <br />
+                          <input
+                            class="form-control"
+                            onkeyup="this.value = this.value.toUpperCase();"
+                            autocomplete="off"
+                            type="text"
+                            data-val="true"
+                            data-val-length="Max 20 characters only"
+                            data-val-length-max="20"
+                            data-val-regex="Invalid Format"
+                            data-val-regex-pattern="[A-Za-z0-9 ./-]*"
+                            data-val-required="Required"
+                            id="bain_homegaurdSlno"
+                            maxlength="20"
+                            name="bain_homegaurdSlno"
+                            value=""
+                          />
+                          <span
+                            class="text-danger field-validation-valid"
+                            data-valmsg-for="bain_homegaurdSlno"
+                            data-valmsg-replace="true"
+                          ></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="col-md-12"
+                      id="Div_bain_Issportquota"
+                      style="display: none"
+                    >
+                      <div class="form-group">
+                        <div class="col-md-8">
+                          <span class="required">*</span
+                          ><label class="control-label" for="bain_Issportquota"
+                            >Do you claim reservation under Sports Quota?</label
+                          >
+                        </div>
+                        <div class="col-md-4">
+                          <select
+                            class="form-control"
+                            data-val="true"
+                            data-val-required="Required"
+                            id="bain_Issportquota"
+                            name="bain_Issportquota"
+                          >
+                            <option value="">Select</option>
+                            <option value="YES">Yes</option>
+                            <option value="NO">No</option>
+                          </select>
+                          <span
+                            class="text-danger field-validation-valid"
+                            data-valmsg-for="bain_Issportquota"
+                            data-valmsg-replace="true"
+                          ></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="col-md-12"
+                      id="Div_bain_sportquotatype"
+                      style="display: none"
+                    >
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <span class="required">*</span
+                          ><label
+                            class="control-label"
+                            for="bain_sportquotatype"
+                            >Select your Sports type</label
+                          >
+                          <br />
+                          <select
+                            class="form-control"
+                            data-val="true"
+                            data-val-required="Required"
+                            id="bain_sportquotatype"
+                            name="bain_sportquotatype"
+                          >
+                            <option value="">Select</option>
+                            <option value="1">
+                              Second and Third position in states organization
+                              by Jharkhand Olympic Association or its affiliated
+                              association championship.
+                            </option>
+                          </select>
+                          <span
+                            class="text-danger field-validation-valid"
+                            data-valmsg-for="bain_sportquotatype"
+                            data-valmsg-replace="true"
+                          ></span>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <span class="required">*</span
+                          ><label
+                            class="control-label"
+                            for="bain_sportquotacertno"
+                            >Sports Certificate Number</label
+                          >
+                          <input
+                            class="form-control"
+                            onkeyup="this.value = this.value.toUpperCase();"
+                            autocomplete="off"
+                            type="text"
+                            data-val="true"
+                            data-val-regex="Invalid Format"
+                            data-val-regex-pattern="[A-Za-z0-9]*"
+                            data-val-required="Required"
+                            id="bain_sportquotacertno"
+                            name="bain_sportquotacertno"
+                            value=""
+                          />
+                          <span
+                            class="text-danger field-validation-valid"
+                            data-valmsg-for="bain_sportquotacertno"
+                            data-valmsg-replace="true"
+                          ></span>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <span class="required">*</span>
+                          <label
+                            class="control-label"
+                            for="bain_sportquotaissuedate"
+                            >Sports Date of issue of the Certificate</label
+                          >
+                          <input
+                            onkeydown="return false;"
+                            class="form-control"
+                            autocomplete="off"
+                            type="text"
+                            data-val="true"
+                            data-val-required="Required"
+                            id="bain_sportquotaissuedate"
+                            name="bain_sportquotaissuedate"
+                            value=""
+                          />
+                          <span
+                            class="text-danger field-validation-valid"
+                            data-valmsg-for="bain_sportquotaissuedate"
+                            data-valmsg-replace="true"
+                          ></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+                <fieldset>
+                  <legend><h4>Educational Qualification</h4></legend>
+
+                  <hr />
+                  <div class="col-md-12">
+                    <table class="rwd-table" style="width: 100%">
+                      <thead>
+                        <tr>
+                          <th
+                            class="text-center"
+                            style="background-color: #415c71"
+                          >
+                            <label
+                              class="field-title"
+                              style="color: white"
+                              for="bain_SSLCEduQual"
+                              >EDUCATIONAL QUALIFICATION</label
+                            >
+                          </th>
+                          <th
+                            class="text-center"
+                            style="background-color: #415c71"
+                          >
+                            <label
+                              class="field-title"
+                              style="color: white"
+                              for="bain_SSLCBoardNameorUniv"
+                              >BOARD NAME</label
+                            >
+                          </th>
+                          <th
+                            class="text-center"
+                            style="background-color: #415c71"
+                          >
+                            <label
+                              class="field-title"
+                              style="color: white"
+                              for="bain_SSLCMonthandYop"
+                              >MONTH &amp; YEAR OF PASSING</label
+                            >
+                          </th>
+                          <th
+                            class="text-center"
+                            style="background-color: #415c71"
+                          >
+                            <label
+                              class="field-title"
+                              style="color: white"
+                              for="bain_SSLCResult"
+                              >RESULT STATUS</label
+                            >
+                          </th>
+                          <th
+                            class="text-center"
+                            style="background-color: #415c71"
+                          >
+                            <label
+                              class="field-title"
+                              style="color: white"
+                              for="bain_SSLCRollNumber"
+                              >ROLL NUMBER</label
+                            >
+                          </th>
+                          <th
+                            class="text-center"
+                            style="background-color: #415c71"
+                          >
+                            <label
+                              class="field-title"
+                              style="color: white"
+                              for="bain_SSLCpercentage"
+                              >% of Marks Obtained</label
+                            >
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <span class="required">*</span>10th / Matriculation
+                          </td>
+                          <td>
+                            <input
+                              class="form-control"
+                              autocomplete="off"
+                              onkeyup="this.value = this.value.toUpperCase();"
+                              type="text"
+                              data-val="true"
+                              data-val-length="Max 100 characters only"
+                              data-val-length-max="100"
+                              data-val-regex="Invalid Format"
+                              data-val-regex-pattern="[A-Za-z ]*"
+                              data-val-required="Required"
+                              id="bain_SSLCBoardNameorUniv"
+                              maxlength="100"
+                              name="bain_SSLCBoardNameorUniv"
+                              value=""
+                            />
+                            <span
+                              class="text-danger field-validation-valid"
+                              data-valmsg-for="bain_SSLCBoardNameorUniv"
+                              data-valmsg-replace="true"
+                            ></span>
+                          </td>
+                          <td>
+                            <input
+                              class="form-control monthPicker"
+                              onkeydown="return false;"
+                              autocomplete="off"
+                              type="text"
+                              data-val="true"
+                              data-val-required="Required"
+                              id="bain_SSLCMonthandYop"
+                              name="bain_SSLCMonthandYop"
+                              value=""
+                            />
+                            <span
+                              class="text-danger field-validation-valid"
+                              data-valmsg-for="bain_SSLCMonthandYop"
+                              data-valmsg-replace="true"
+                            ></span>
+                          </td>
+                          <td>
+                            <select
+                              class="form-control"
+                              data-val="true"
+                              data-val-required="Required"
+                              id="bain_SSLCResult"
+                              name="bain_SSLCResult"
+                            >
+                              <option value="">Select</option>
+                              <option value="1">PASS</option>
+                            </select>
+                            <span
+                              class="text-danger field-validation-valid"
+                              data-valmsg-for="bain_SSLCResult"
+                              data-valmsg-replace="true"
+                            ></span>
+                          </td>
+
+                          <td>
+                            <input
+                              class="form-control"
+                              autocomplete="off"
+                              onkeyup="this.value = this.value.toUpperCase();"
+                              type="text"
+                              data-val="true"
+                              data-val-length="Max 25 characters only"
+                              data-val-length-max="25"
+                              data-val-regex="Only numbers and alphabets are allowed."
+                              data-val-regex-pattern="^[a-zA-Z0-9]&#x2B;$"
+                              data-val-required="Required"
+                              id="bain_SSLCRollNumber"
+                              maxlength="25"
+                              name="bain_SSLCRollNumber"
+                              value=""
+                            />
+                            <span
+                              class="text-danger field-validation-valid"
+                              data-valmsg-for="bain_SSLCRollNumber"
+                              data-valmsg-replace="true"
+                            ></span>
+                          </td>
+                          <td>
+                            <input
+                              class="form-control"
+                              autocomplete="off"
+                              onkeyup="this.value = this.value.toUpperCase();"
+                              type="text"
+                              data-val="true"
+                              data-val-length="Max % of Marks Obtained characters only"
+                              data-val-length-max="6"
+                              data-val-regex="Invalid format."
+                              data-val-regex-pattern="^\d&#x2B;(\.\d{1,2})?$"
+                              data-val-required="Required"
+                              id="bain_SSLCpercentage"
+                              maxlength="6"
+                              name="bain_SSLCpercentage"
+                              value=""
+                            />
+                            <span
+                              class="text-danger field-validation-valid"
+                              data-valmsg-for="bain_SSLCpercentage"
+                              data-valmsg-replace="true"
+                            ></span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </fieldset>
+                <fieldset>
+                  <legend><h4>Address</h4></legend>
+
+                  <hr />
+                  <div class="col-md-12">
+               
+                      <div class="col-md-12">
+                        <span class="required">*</span>Correspondence Address
+                        <br />
+                      </div>
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label class="control-label" for="bain_CAddress1"
+                            >Address Line 1</label
+                          >
+                          <input
+                            class="form-control"
+                            onkeyup="this.value = this.value.toUpperCase();"
+                            autocomplete="off"
+                            type="text"
+                            data-val="true"
+                            data-val-length="Address1 cannot be longer than 100 characters."
+                            data-val-length-max="100"
+                            data-val-regex="Invalid Address Line 1"
+                            data-val-regex-pattern="^[A-Za-z0-9_ .,/#-]*$"
+                            data-val-required="Required"
+                            id="bain_CAddress1"
+                            maxlength="100"
+                            name="bain_CAddress1"
+                            value=""
+                          />
+                          <span
+                            class="text-danger field-validation-valid"
+                            data-valmsg-for="bain_CAddress1"
+                            data-valmsg-replace="true"
+                          ></span>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label class="control-label" for="bain_CAddress2"
+                            >Address Line 2</label
+                          >
+                          <input
+                            class="form-control"
+                            onkeyup="this.value = this.value.toUpperCase();"
+                            autocomplete="off"
+                            type="text"
+                            data-val="true"
+                            data-val-length="Address2 cannot be longer than 100 characters."
+                            data-val-length-max="100"
+                            data-val-regex="Invalid Address Line 2"
+                            data-val-regex-pattern="^[A-Za-z0-9_ .,/-]*$"
+                            id="bain_CAddress2"
+                            maxlength="100"
+                            name="bain_CAddress2"
+                            value=""
+                          />
+                          <span
+                            class="text-danger field-validation-valid"
+                            data-valmsg-for="bain_CAddress2"
+                            data-valmsg-replace="true"
+                          ></span>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label class="control-label" for="bain_CCity"
+                            >City/Village/Town</label
+                          >
+                          <input
+                            class="form-control"
+                            onkeyup="this.value = this.value.toUpperCase();"
+                            autocomplete="off"
+                            type="text"
+                            data-val="true"
+                            data-val-length="City cannot be longer than 50 characters."
+                            data-val-length-max="50"
+                            data-val-regex="Invalid City"
+                            data-val-regex-pattern="^[A-Za-z ]*$"
+                            data-val-required="Required"
+                            id="bain_CCity"
+                            maxlength="50"
+                            name="bain_CCity"
+                            value=""
+                          />
+                          <span
+                            class="text-danger field-validation-valid"
+                            data-valmsg-for="bain_CCity"
+                            data-valmsg-replace="true"
+                          ></span>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label class="control-label" for="bain_Cstateid"
+                            >State/Union Territory</label
+                          >
+                          <select
+                            class="form-control"
+                            data-val="true"
+                            data-val-required="Required"
+                            id="bain_Cstateid"
+                            name="bain_Cstateid"
+                          >
+                            <option value="">Select</option>
+                            <option value="1">
+                              ANDAMAN AND NICOBAR ISLANDS
+                            </option>
+                            <option value="2">ANDHRA PRADESH</option>
+                            <option value="3">ARUNACHAL PRADESH</option>
+                            <option value="4">ASSAM</option>
+                            <option value="5">BIHAR</option>
+                            <option value="6">CHANDIGARH</option>
+                            <option value="7">CHHATTISGARH</option>
+                            <option value="8">DADRA AND NAGAR HAVELI</option>
+                            <option value="9">DAMAN AND DIU</option>
+                            <option value="10">GOA</option>
+                            <option value="11">GUJARAT</option>
+                            <option value="12">HARYANA</option>
+                            <option value="13">HIMACHAL PRADESH</option>
+                            <option value="14">JAMMU AND KASHMIR</option>
+                            <option value="15">JHARKHAND</option>
+                            <option value="16">KARNATAKA</option>
+                            <option value="17">KERALA</option>
+                            <option value="18">LAKSHADWEEP</option>
+                            <option value="19">MADHYA PRADESH</option>
+                            <option value="20">MAHARASHTRA</option>
+                            <option value="21">MANIPUR</option>
+                            <option value="22">MEGHALAYA</option>
+                            <option value="23">MIZORAM</option>
+                            <option value="24">NAGALAND</option>
+                            <option value="25">NCT&#x2013;DELHI</option>
+                            <option value="26">ORISSA</option>
+                            <option value="27">PONDICHERRY</option>
+                            <option value="28">PUNJAB</option>
+                            <option value="29">RAJASTHAN</option>
+                            <option value="30">SIKKIM</option>
+                            <option value="31">TAMIL NADU</option>
+                            <option value="32">TELANGANA</option>
+                            <option value="33">TRIPURA</option>
+                            <option value="34">UTTAR PRADESH</option>
+                            <option value="35">UTTARANCHAL</option>
+                            <option value="36">WEST BENGAL</option>
+                          </select>
+                          <span
+                            class="text-danger field-validation-valid"
+                            data-valmsg-for="bain_Cstateid"
+                            data-valmsg-replace="true"
+                          ></span>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <div id="DivCDistrict" runat="server">
+                            <label class="control-label" for="bain_CDistrictid"
+                              >District</label
+                            >
+                            <select
+                              class="form-control"
+                              data-val="true"
+                              data-val-required="Required"
+                              id="bain_CDistrictid"
+                              name="bain_CDistrictid"
+                            >
+                              <option value="">Select</option>
+                              <option value="1">BOKARO</option>
+                              <option value="2">CHATRA</option>
+                              <option value="3">DEOGHAR</option>
+                              <option value="4">DHANBAD</option>
+                              <option value="5">DUMKA</option>
+                              <option value="6">EAST SINGHBHUM</option>
+                              <option value="7">GARHWA</option>
+                              <option value="8">GIRIDIH</option>
+                              <option value="9">GODDA</option>
+                              <option value="10">GUMLA</option>
+                              <option value="11">HAZARIBAGH</option>
+                              <option value="12">JAMTARA</option>
+                              <option value="13">KHUNTI</option>
+                              <option value="14">KODERMA</option>
+                              <option value="15">LATEHAR</option>
+                              <option value="16">LOHARDAGA</option>
+                              <option value="17">PAKUR</option>
+                              <option value="18">PALAMU</option>
+                              <option value="19">RAMGARH</option>
+                              <option value="20">RANCHI</option>
+                              <option value="21">SAHEBGANJ</option>
+                              <option value="22">SARAIKELA KHARSAWAN</option>
+                              <option value="23">SIMDEGA</option>
+                              <option value="24">WEST SINGHBHUM</option>
+                            </select>
+                            <span
+                              class="text-danger field-validation-valid"
+                              data-valmsg-for="bain_CDistrictid"
+                              data-valmsg-replace="true"
+                            ></span>
+                          </div>
+                          <div
+                            id="DivCOtherStateDistrict"
+                            style="display: none"
+                            runat="server"
+                          >
+                            <span class="required">*</span
+                            ><label
+                              class="control-label"
+                              for="bain_COtherStateDistrict"
+                              >Other State District Name</label
+                            >
+                            <input
+                              maxlength="50"
+                              autocomplete="off"
+                              title="If Other District"
+                              onkeyup="this.value = this.value.toUpperCase();"
+                              placeholder="If Other District"
+                              class="form-control"
+                              type="text"
+                              data-val="true"
+                              data-val-length="Max 50 characters only"
+                              data-val-length-max="50"
+                              data-val-regex="Invalid Format"
+                              data-val-regex-pattern="[A-Za-z ]*"
+                              id="bain_COtherStateDistrict"
+                              name="bain_COtherStateDistrict"
+                              value=""
+                            />
+                            <span
+                              class="text-danger field-validation-valid"
+                              data-valmsg-for="bain_COtherStateDistrict"
+                              data-valmsg-replace="true"
+                            ></span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label class="control-label" for="bain_CPincode"
+                            >Pin code</label
+                          >
+                          <input
+                            maxlength="6"
+                            class="form-control"
+                            onkeyup="this.value = this.value.toUpperCase();"
+                            autocomplete="off"
+                            type="text"
+                            data-val="true"
+                            data-val-range="Invalid Pin code"
+                            data-val-range-max="999999"
+                            data-val-range-min="100000"
+                            data-val-regex="Invalid Pin code"
+                            data-val-regex-pattern="^[0-9]{6}$"
+                            data-val-required="Required"
+                            id="bain_CPincode"
+                            name="bain_CPincode"
+                            value=""
+                          />
+                          <span
+                            class="text-danger field-validation-valid"
+                            data-valmsg-for="bain_CPincode"
+                            data-valmsg-replace="true"
+                          ></span>
+                        </div>
+                      </div>
+                    </div>
+                
+                      <div class="col-md-12">
+                        <span class="required">*</span>Permanent Address (<input
+                          class="form-check-input"
+                          type="checkbox"
+                          data-val="true"
+                          data-val-required="The bain_SameAddr field is required."
+                          id="bain_SameAddr"
+                          name="bain_SameAddr"
+                          value="true"
+                        />
+                        Same As Correspondence Address)
+                      </div>
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label class="control-label" for="bain_PAddress1"
+                            >Address Line 1</label
+                          >
+                          <input
+                            class="form-control"
+                            onkeyup="this.value = this.value.toUpperCase();"
+                            autocomplete="off"
+                            type="text"
+                            data-val="true"
+                            data-val-length="Address1 cannot be longer than 100 characters."
+                            data-val-length-max="100"
+                            data-val-regex="Invalid Address Line 1"
+                            data-val-regex-pattern="^[A-Za-z0-9_ .,/#-]*$"
+                            data-val-required="Required"
+                            id="bain_PAddress1"
+                            maxlength="100"
+                            name="bain_PAddress1"
+                            value=""
+                          />
+                          <span
+                            class="text-danger field-validation-valid"
+                            data-valmsg-for="bain_PAddress1"
+                            data-valmsg-replace="true"
+                          ></span>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label class="control-label" for="bain_PAddress2"
+                            >Address Line 2</label
+                          >
+                          <input
+                            class="form-control"
+                            onkeyup="this.value = this.value.toUpperCase();"
+                            autocomplete="off"
+                            type="text"
+                            data-val="true"
+                            data-val-length="Address2 cannot be longer than 100 characters."
+                            data-val-length-max="100"
+                            data-val-regex="Invalid Address Line 2"
+                            data-val-regex-pattern="^[A-Za-z0-9_ .,/-]*$"
+                            id="bain_PAddress2"
+                            maxlength="100"
+                            name="bain_PAddress2"
+                            value=""
+                          />
+                          <span
+                            class="text-danger field-validation-valid"
+                            data-valmsg-for="bain_PAddress2"
+                            data-valmsg-replace="true"
+                          ></span>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label class="control-label" for="bain_PCity"
+                            >City/Village/Town</label
+                          >
+                          <input
+                            class="form-control"
+                            onkeyup="this.value = this.value.toUpperCase();"
+                            autocomplete="off"
+                            type="text"
+                            data-val="true"
+                            data-val-length="City cannot be longer than 50 characters."
+                            data-val-length-max="50"
+                            data-val-regex="Invalid City"
+                            data-val-regex-pattern="^[A-Za-z ]*$"
+                            data-val-required="Required"
+                            id="bain_PCity"
+                            maxlength="50"
+                            name="bain_PCity"
+                            value=""
+                          />
+                          <span
+                            class="text-danger field-validation-valid"
+                            data-valmsg-for="bain_PCity"
+                            data-valmsg-replace="true"
+                          ></span>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label class="control-label" for="bain_Pstateid"
+                            >State/Union Territory</label
+                          >
+                          <select
+                            class="form-control"
+                            data-val="true"
+                            data-val-required="Required"
+                            id="bain_Pstateid"
+                            name="bain_Pstateid"
+                          >
+                            <option value="">Select</option>
+                            <option value="1">
+                              ANDAMAN AND NICOBAR ISLANDS
+                            </option>
+                            <option value="2">ANDHRA PRADESH</option>
+                            <option value="3">ARUNACHAL PRADESH</option>
+                            <option value="4">ASSAM</option>
+                            <option value="5">BIHAR</option>
+                            <option value="6">CHANDIGARH</option>
+                            <option value="7">CHHATTISGARH</option>
+                            <option value="8">DADRA AND NAGAR HAVELI</option>
+                            <option value="9">DAMAN AND DIU</option>
+                            <option value="10">GOA</option>
+                            <option value="11">GUJARAT</option>
+                            <option value="12">HARYANA</option>
+                            <option value="13">HIMACHAL PRADESH</option>
+                            <option value="14">JAMMU AND KASHMIR</option>
+                            <option value="15">JHARKHAND</option>
+                            <option value="16">KARNATAKA</option>
+                            <option value="17">KERALA</option>
+                            <option value="18">LAKSHADWEEP</option>
+                            <option value="19">MADHYA PRADESH</option>
+                            <option value="20">MAHARASHTRA</option>
+                            <option value="21">MANIPUR</option>
+                            <option value="22">MEGHALAYA</option>
+                            <option value="23">MIZORAM</option>
+                            <option value="24">NAGALAND</option>
+                            <option value="25">NCT&#x2013;DELHI</option>
+                            <option value="26">ORISSA</option>
+                            <option value="27">PONDICHERRY</option>
+                            <option value="28">PUNJAB</option>
+                            <option value="29">RAJASTHAN</option>
+                            <option value="30">SIKKIM</option>
+                            <option value="31">TAMIL NADU</option>
+                            <option value="32">TELANGANA</option>
+                            <option value="33">TRIPURA</option>
+                            <option value="34">UTTAR PRADESH</option>
+                            <option value="35">UTTARANCHAL</option>
+                            <option value="36">WEST BENGAL</option>
+                          </select>
+                          <input
+                            type="hidden"
+                            id="bain_HidPstateid"
+                            name="bain_HidPstateid"
+                            value=""
+                          />
+                          <span
+                            class="text-danger field-validation-valid"
+                            data-valmsg-for="bain_Pstateid"
+                            data-valmsg-replace="true"
+                          ></span>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <div id="DivPDistrict" runat="server">
+                            <label class="control-label" for="bain_PDistrictid"
+                              >District</label
+                            >
+                            <select
+                              class="form-control"
+                              id="bain_PDistrictid"
+                              name="bain_PDistrictid"
+                            >
+                              <option value="">Select</option>
+                              <option value="1">BOKARO</option>
+                              <option value="2">CHATRA</option>
+                              <option value="3">DEOGHAR</option>
+                              <option value="4">DHANBAD</option>
+                              <option value="5">DUMKA</option>
+                              <option value="6">EAST SINGHBHUM</option>
+                              <option value="7">GARHWA</option>
+                              <option value="8">GIRIDIH</option>
+                              <option value="9">GODDA</option>
+                              <option value="10">GUMLA</option>
+                              <option value="11">HAZARIBAGH</option>
+                              <option value="12">JAMTARA</option>
+                              <option value="13">KHUNTI</option>
+                              <option value="14">KODERMA</option>
+                              <option value="15">LATEHAR</option>
+                              <option value="16">LOHARDAGA</option>
+                              <option value="17">PAKUR</option>
+                              <option value="18">PALAMU</option>
+                              <option value="19">RAMGARH</option>
+                              <option value="20">RANCHI</option>
+                              <option value="21">SAHEBGANJ</option>
+                              <option value="22">SARAIKELA KHARSAWAN</option>
+                              <option value="23">SIMDEGA</option>
+                              <option value="24">WEST SINGHBHUM</option>
+                            </select>
+                            <input
+                              type="hidden"
+                              id="bain_HidPDistrictid"
+                              name="bain_HidPDistrictid"
+                              value=""
+                            />
+                            <span
+                              class="text-danger field-validation-valid"
+                              data-valmsg-for="bain_PDistrictid"
+                              data-valmsg-replace="true"
+                            ></span>
+                          </div>
+                          <div
+                            id="DivPOtherStateDistrict"
+                            style="display: none"
+                            runat="server"
+                          >
+                            <span class="required">*</span
+                            ><label
+                              class="control-label"
+                              for="bain_POtherStateDistrict"
+                              >Other State District Name</label
+                            >
+                            <input
+                              maxlength="50"
+                              autocomplete="off"
+                              title="If Other District"
+                              onkeyup="this.value = this.value.toUpperCase();"
+                              placeholder="If Other District"
+                              class="form-control"
+                              type="text"
+                              data-val="true"
+                              data-val-length="Max 50 characters only"
+                              data-val-length-max="50"
+                              data-val-regex="Invalid Format"
+                              data-val-regex-pattern="[A-Za-z ]*"
+                              id="bain_POtherStateDistrict"
+                              name="bain_POtherStateDistrict"
+                              value=""
+                            />
+                            <span
+                              class="text-danger field-validation-valid"
+                              data-valmsg-for="bain_POtherStateDistrict"
+                              data-valmsg-replace="true"
+                            ></span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label class="control-label" for="bain_PPincode"
+                            >Pin code</label
+                          >
+                          <input
+                            maxlength="6"
+                            class="form-control"
+                            onkeyup="this.value = this.value.toUpperCase();"
+                            autocomplete="off"
+                            type="text"
+                            data-val="true"
+                            data-val-range="Invalid Pin code"
+                            data-val-range-max="999999"
+                            data-val-range-min="100000"
+                            data-val-regex="Invalid Pin code"
+                            data-val-regex-pattern="^[0-9]{6}$"
+                            data-val-required="Required"
+                            id="bain_PPincode"
+                            name="bain_PPincode"
+                            value=""
+                          />
+                          <span
+                            class="text-danger field-validation-valid"
+                            data-valmsg-for="bain_PPincode"
+                            data-valmsg-replace="true"
+                          ></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+                <div class="form-group">
+                  <div class="modal-footer">
+                    <div class="col-md-12">
+                      <div class="col-md-6">
+                        <div class="button-section">
+                          <span class="prev">
+                            <a
+                              class="btn"
+                              style="width: 80px"
+                              href="/"
+                              >Home <small>&nbsp; </small></a
+                            >
+                          </span>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="button-section">
+                          <span class="next">
+                            <button
+                              type="button"
+                              class="btn"
+                              value="buttonValue"
+                              id="chekval"
+                              data-toggle="modal"
+                              data-backdrop="static"
+                              data-keyboard="false"
+                            >
+                              Preview & Submit
+                              <small>Preliminary Stage</small>
+                            </button>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <p class="text-center"></p>
+                </div>
+                <!-- Modal -->
+                <div id="myModal" class="modal" role="dialog">
+                  <div class="modal-dialog" style="max-width: 1052px">
+                    <div
+                      class="modal-content"
+                      style="background-color: #f9f6f6"
+                    >
+                      <div class="modal-header">
+                        <h4 class="modal-title" id="myModalLabel">
+                          <div class="cat_head modal-title">
+                            <h2 class="form-page-title">
+                              Preliminary Stage Confirmation
+                            </h2>
+                          </div>
+                        </h4>
+                      </div>
+                      <div class="modal-body">
+                        <legend>
+                          <h4>Personal Details</h4>
+                        </legend>
+                        <hr />
+                        <table
+                          class="table table-bordered"
+                          style="font-weight: bold"
+                        >
+                          <tr>
+                            <td style="width: 25%">
+                              <span class="required">*</span
+                              ><label class="control-label" for="bain_FirstName"
+                                >Applicant&#x27;s First Name</label
+                              >:
+                              <br />
+                              <div class="word-wrap">
+                                <label id="Cnf_bain_FirstName"></label>
+                              </div>
+                            </td>
+                            <td style="width: 25%">
+                              <label class="control-label" for="bain_LastName"
+                                >Last Name</label
+                              >:
+                              <br />
+                              <div class="word-wrap">
+                                <label id="Cnf_bain_LastName"></label>
+                              </div>
+                            </td>
+                            <td style="width: 25%" colspan="2">
+                              <span class="required">*</span
+                              ><label class="control-label" for="bain_FullName"
+                                >Applicant&#x27;s Full Name</label
+                              >:
+                              <br />
+                              <div class="word-wrap">
+                                <label id="Cnf_bain_FullName"></label>
+                              </div>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td style="width: 25%">
+                              <span class="required">*</span
+                              ><label class="control-label" for="bain_DOB"
+                                >Date of Birth (DD-MM-YYYY)</label
+                              >:
+                              <br />
+                              <div class="word-wrap">
+                                <label id="Cnf_bain_DOB"></label>
+                              </div>
+                            </td>
+                            <td style="width: 25%">
+                              <span class="required">*</span
+                              ><label
+                                class="control-label"
+                                for="bain_FathersName"
+                                >Father&#x27;s Name</label
+                              >:
+                              <br />
+                              <div class="word-wrap">
+                                <label id="Cnf_bain_FathersName"></label>
+                              </div>
+                            </td>
+                            <td style="width: 25%" colspan="2">
+                              <span class="required">*</span
+                              ><label
+                                class="control-label"
+                                for="bain_MothersName"
+                                >Mother&#x27;s Name</label
+                              >:
+                              <br />
+                              <div class="word-wrap">
+                                <label id="Cnf_bain_MothersName"></label>
+                              </div>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td style="width: 25%">
+                              <span class="required">*</span
+                              ><label class="control-label" for="bain_Genderid"
+                                >Gender</label
+                              >:
+                              <br />
+                              <div class="word-wrap">
+                                <label id="Cnf_bain_Genderid"></label>
+                              </div>
+                            </td>
+                            <td style="width: 25%">
+                              <span class="required">*</span
+                              ><label class="control-label" for="bain_MobileNo"
+                                >Mobile Number</label
+                              >:
+                              <br />
+                              <div class="word-wrap">
+                                <label id="Cnf_bain_MobileNo"></label>
+                              </div>
+                            </td>
+                            <td style="width: 25%" colspan="2">
+                              <span class="required">*</span
+                              ><label
+                                class="control-label"
+                                for="bain_ConfMobileNo"
+                                >Confirm Mobile Number</label
+                              >:
+                              <br />
+                              <div class="word-wrap">
+                                <label id="Cnf_bain_ConfMobileNo"></label>
+                              </div>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td style="width: 25%">
+                              <span class="required">*</span
+                              ><label class="control-label" for="bain_Aadhar"
+                                >Aadhaar No.</label
+                              >:
+                              <br />
+                              <div class="word-wrap">
+                                <label id="Cnf_bain_Aadhar"></label>
+                              </div>
+                            </td>
+                            <td style="width: 25%">
+                              <span class="required">*</span
+                              ><label class="control-label" for="bain_Email"
+                                >E-Mail ID</label
+                              >:
+                              <br />
+                              <div class="word-wrap">
+                                <label id="Cnf_bain_Email"></label>
+                              </div>
+                            </td>
+                            <td style="width: 25%" colspan="2">
+                              <span class="required">*</span
+                              ><label class="control-label" for="bain_ConfEmail"
+                                >Confirm E-Mail ID</label
+                              >:
+                              <br />
+                              <div class="word-wrap">
+                                <label id="Cnf_bain_ConfEmail"></label>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <span class="required">*</span
+                              ><label
+                                class="control-label"
+                                for="bain_Nationality"
+                                >Nationality</label
+                              >:
+                              <br />
+                              <div class="word-wrap">
+                                <label id="Cnf_bain_Nationality"></label>
+                              </div>
+                            </td>
+                            <td>
+                              <span class="required">*</span
+                              ><label
+                                class="control-label"
+                                for="bain_Identification1"
+                                >Visible Identification Mark 1</label
+                              >:
+                              <br />
+                              <div class="word-wrap">
+                                <label id="Cnf_bain_Identification1"></label>
+                              </div>
+                            </td>
+                            <td>
+                              <label
+                                class="control-label"
+                                for="bain_Identification2"
+                                >Visible Identification Mark 2</label
+                              >:
+                              <br />
+                              <div class="word-wrap">
+                                <label id="Cnf_bain_Identification2"></label>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <span class="required">*</span
+                              ><label
+                                class="control-label"
+                                for="bain_QPLanguage"
+                                >Option for Language paper-II</label
+                              >:
+                              <br />
+                              <div class="word-wrap">
+                                <label id="Cnf_bain_QPLanguage"></label>
+                              </div>
+                            </td>
+                            <td>
+                              <span class="required">*</span
+                              ><label class="control-label" for="bain_maritial"
+                                >Marital Status</label
+                              >:
+                              <br />
+                              <div class="word-wrap">
+                                <label id="Cnf_bain_maritial"></label>
+                              </div>
+                            </td>
+                            <td id="td_bain_spouseothers">
+                              <span class="required">*</span
+                              ><label
+                                class="control-label"
+                                for="bain_spouseothers"
+                                >Spouse Name / Others</label
+                              >:
+                              <br />
+                              <div class="word-wrap">
+                                <label id="Cnf_bain_spouseothers"></label>
+                              </div>
+                            </td>
+                          </tr>
+                        </table>
+
+                        <legend>
+                          <h4>Other Information</h4>
+                        </legend>
+                        <hr />
+                        <table
+                          class="table table-bordered"
+                          style="font-weight: bold"
+                        >
+                          <tr runat="server">
+                            <td colspan="4">
+                              <span class="required">*</span
+                              ><label
+                                class="control-label"
+                                for="bain_vacancytype"
+                                >Vacancy Type</label
+                              >:
+                              <br />
+                              <div class="word-wrap">
+                                <label id="Cnf_bain_vacancytype"></label>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr runat="server">
+                            <td colspan="4">
+                              <span class="required">*</span
+                              ><label
+                                class="control-label"
+                                for="bain_isDomicileJha"
+                                >Are you local resident of Jharkhand?</label
+                              >:
+                              <br />
+                              <div class="word-wrap">
+                                <label id="Cnf_bain_DomicileJha"></label>
+                              </div>
+                            </td>
+                          </tr>
+
+                          <tr id="Cnfdiv_DomicileJhaYES" runat="server">
+                            <td colspan="4">
+                              <span class="required">*</span
+                              ><label
+                                class="control-label"
+                                for="bain_hdistrictid"
+                                >Select your District of local residence</label
+                              >:
+                              <br />
+                              <div class="word-wrap">
+                                <label id="Cnf_bain_hdistrictid"></label>
+                              </div>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td colspan="4">
+                              <span class="required">*</span
+                              ><label
+                                class="control-label"
+                                for="bain_Categoryid"
+                                >Category</label
+                              >:
+                              <br />
+                              <div class="word-wrap">
+                                <label id="Cnf_bain_Categoryid"></label>
+                              </div>
+                            </td>
+                          </tr>
+
+                          <tr id="tr_Cnfbain_Primitive" runat="server">
+                            <td colspan="4">
+                              <span class="required">*</span
+                              ><label class="control-label" for="bain_Primitive"
+                                >Are you belong to Primitive tribe ?</label
+                              >:
+                              <br />
+                              <div class="word-wrap">
+                                <label id="Cnf_bain_Primitive"></label>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr id="tr_Cnfbain_Primitivecaste" runat="server">
+                            <td colspan="4">
+                              <span class="required">*</span
+                              ><label
+                                class="control-label"
+                                for="bain_Primitivecaste"
+                                >Caste Name</label
+                              >:
+                              <br />
+                              <div class="word-wrap">
+                                <label id="Cnf_bain_Primitivecaste"></label>
+                              </div>
+                            </td>
+                          </tr>
+
+                          <tr id="trCnf_bain_isExServiceman">
+                            <td colspan="4">
+                              <span class="required">*</span
+                              ><label
+                                class="control-label"
+                                for="bain_isExServiceman"
+                                >Are you an Ex-Servicemen?</label
+                              >:
+                              <br />
+                              <div class="word-wrap">
+                                <label id="Cnf_bain_ExServiceman"></label>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr id="trCnf_bain_ExServiceman">
+                            <td>
+                              <span class="required">*</span
+                              ><label
+                                class="control-label"
+                                for="bain_ExServicemanCertNo"
+                                >Certificate Number</label
+                              >: <br /><br />
+                              <div class="word-wrap">
+                                <label id="Cnf_bain_ExServicemanCertNo"></label>
+                              </div>
+                            </td>
+                            <td>
+                              <span class="required">*</span
+                              ><label
+                                class="control-label"
+                                for="bain_ExServicemanIssueDate"
+                                >Date of issue of the Certificate</label
+                              >:
+                              <br />
+                              <div class="word-wrap">
+                                <label
+                                  id="Cnf_bain_ExServicemanIssueDate"
+                                ></label>
+                              </div>
+                            </td>
+                            <td>
+                              <span class="required">*</span
+                              ><label
+                                class="control-label"
+                                for="bain_ExServicemanStartDate"
+                                >Service Start Date</label
+                              >:
+                              <br />
+                              <div class="word-wrap">
+                                <label
+                                  id="Cnf_bain_ExServicemanStartDate"
+                                ></label>
+                              </div>
+                            </td>
+                            <td>
+                              <span class="required">*</span
+                              ><label
+                                class="control-label"
+                                for="bain_ExServicemanEndDate"
+                                >Service End Date</label
+                              >:
+                              <br />
+                              <div class="word-wrap">
+                                <label
+                                  id="Cnf_bain_ExServicemanEndDate"
+                                ></label>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr id="trCnf_bain_ishomegaurd" runat="server">
+                            <td colspan="4">
+                              <span class="required">*</span
+                              ><label class="control-label" for="bain_homegaurd"
+                                >Have you served in home guard of 3 year or at
+                                least six months?</label
+                              >:
+                              <br />
+                              <div class="word-wrap">
+                                <label id="Cnf_bain_homegaurd"></label>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr id="trCnf_bain_homegaurd" runat="server">
+                            <td>
+                              <span class="required">*</span
+                              ><label
+                                class="control-label"
+                                for="bain_homegaurdissueDate"
+                                >Date of issuing of home guard experience
+                                certificate (DD-MM-YYYY)</label
+                              >: <br />
+                              <br />
+                              <div class="word-wrap">
+                                <label id="Cnf_bain_homegaurdissueDate"></label>
+                              </div>
+                            </td>
+                            <td>
+                              <span class="required">*</span
+                              ><label
+                                class="control-label"
+                                for="bain_homegaurdSlno"
+                                >Home guard certificate serial No.</label
+                              >:
+                              <br />
+                              <div class="word-wrap">
+                                <label id="Cnf_bain_homegaurdSlno"></label>
+                              </div>
+                            </td>
+                          </tr>
+
+                          <tr id="trCnf_bain_Issportquota" runat="server">
+                            <td colspan="4">
+                              <span class="required">*</span
+                              ><label
+                                class="control-label"
+                                for="bain_Issportquota"
+                                >Do you claim reservation under Sports
+                                Quota?</label
+                              >:
+                              <br />
+                              <div class="word-wrap">
+                                <label id="Cnf_bain_Issportquota"></label>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr id="trCnf_bain_IssportquotaYES" runat="server">
+                            <td>
+                              <span class="required">*</span
+                              ><label
+                                class="control-label"
+                                for="bain_sportquotatype"
+                                >Select your Sports type</label
+                              >: <br /><br />
+                              <div class="word-wrap">
+                                <label id="Cnf_bain_sportquotatype"></label>
+                              </div>
+                            </td>
+                            <td>
+                              <span class="required">*</span
+                              ><label
+                                class="control-label"
+                                for="bain_sportquotacertno"
+                                >Sports Certificate Number</label
+                              >:
+                              <br />
+                              <div class="word-wrap">
+                                <label id="Cnf_bain_sportquotacertno"></label>
+                              </div>
+                            </td>
+                            <td>
+                              <span class="required">*</span
+                              ><label
+                                class="control-label"
+                                for="bain_sportquotaissuedate"
+                                >Sports Date of issue of the Certificate</label
+                              >:
+                              <br />
+                              <div class="word-wrap">
+                                <label
+                                  id="Cnf_bain_sportquotaissuedate"
+                                ></label>
+                              </div>
+                            </td>
+                          </tr>
+                        </table>
+
+                        <legend><h4>Educational Qualification</h4></legend>
+                        <hr />
+                        <table class="table table-bordered">
+                          <tr>
+                            <td>
+                              <span class="required">*</span
+                              ><label
+                                class="control-label"
+                                for="bain_SSLCEduQual"
+                                >EDUCATIONAL QUALIFICATION</label
+                              >:
+                              <br />
+                            </td>
+                            <td>
+                              <span class="required">*</span
+                              ><label
+                                class="control-label"
+                                for="bain_SSLCBoardNameorUniv"
+                                >BOARD NAME</label
+                              >:
+                            </td>
+                            <td>
+                              <span class="required">*</span
+                              ><label
+                                class="control-label"
+                                for="bain_SSLCMonthandYop"
+                                >MONTH &amp; YEAR OF PASSING</label
+                              >:
+                            </td>
+                            <td>
+                              <span class="required">*</span
+                              ><label
+                                class="control-label"
+                                for="bain_SSLCResult"
+                                >RESULT STATUS</label
+                              >:
+                            </td>
+                            <td>
+                              <span class="required">*</span
+                              ><label
+                                class="control-label"
+                                for="bain_SSLCRollNumber"
+                                >ROLL NUMBER</label
+                              >:
+                            </td>
+                            <td>
+                              <span class="required">*</span
+                              ><label
+                                class="control-label"
+                                for="bain_SSLCpercentage"
+                                >% of Marks Obtained</label
+                              >:
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="word-wrap">10th / Matriculation</div>
+                            </td>
+                            <td>
+                              <div class="word-wrap">
+                                <label
+                                  id="Cnf_bain_SSLCBoardNameorUniv"
+                                ></label>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="word-wrap">
+                                <label id="Cnf_bain_SSLCMonthandYop"></label>
+                              </div>
+                            </td>
+
+                            <td>
+                              <div class="word-wrap">
+                                <label id="Cnf_bain_SSLCResult"></label>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="word-wrap">
+                                <label id="Cnf_bain_SSLCRollNumber"></label>
+                              </div>
+                            </td>
+
+                            <td>
+                              <div class="word-wrap">
+                                <label id="Cnf_bain_SSLCpercentage"></label>
+                              </div>
+                            </td>
+                          </tr>
+                        </table>
+                        <legend>
+                          <h4>Address</h4>
+                        </legend>
+                        <hr />
+                        <table
+                          class="table table-bordered"
+                          style="font-weight: bold"
+                        >
+                          <tr>
+                            <td colspan="2">
+                              <table class="table table-bordered">
+                                <tr>
+                                  <td><br />Correspondence address</td>
+                                </tr>
+                                <tr>
+                                  <td colspan="2">
+                                    <label id="Cnf_bain_CAddress1"></label>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td colspan="2">
+                                    <label id="Cnf_bain_CAddress2"></label>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td colspan="2">
+                                    <label id="Cnf_bain_CCity"></label>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td colspan="2">
+                                    <label id="Cnf_bain_Cstateid"></label>
+                                  </td>
+                                </tr>
+                                <tr id="trCDistrictid" runat="server">
+                                  <td colspan="2">
+                                    <label id="Cnf_bain_CDistrictid"></label>
+                                  </td>
+                                </tr>
+                                <tr id="trCOtherStateDistrict" runat="server">
+                                  <td colspan="2">
+                                    <label
+                                      id="Cnf_bain_COtherStateDistrict"
+                                    ></label>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td colspan="2">
+                                    <label id="Cnf_bain_CPincode"></label>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                            <td colspan="2">
+                              <table class="table table-bordered">
+                                <tr>
+                                  <td>
+                                    <input
+                                      id="Cnf1_bain_SameAddr"
+                                      type="checkbox"
+                                      disabled
+                                      class="form-check-input"
+                                    />
+                                    Same as Correspondence Address
+                                    <br />Permanent Address
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td colspan="2">
+                                    <label id="Cnf_bain_PAddress1"></label>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td colspan="2">
+                                    <label id="Cnf_bain_PAddress2"></label>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td colspan="2">
+                                    <label id="Cnf_bain_PCity"></label>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td colspan="2">
+                                    <label id="Cnf_bain_Pstateid"></label>
+                                  </td>
+                                </tr>
+                                <tr id="trPDistrictid" runat="server">
+                                  <td colspan="2">
+                                    <label id="Cnf_bain_PDistrictid"></label>
+                                  </td>
+                                </tr>
+                                <tr id="trPOtherStateDistrict" runat="server">
+                                  <td colspan="2">
+                                    <label
+                                      id="Cnf_bain_POtherStateDistrict"
+                                    ></label>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td colspan="2">
+                                    <label id="Cnf_bain_PPincode"></label>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+
+                        <table
+                          border="0"
+                          cellpadding="0"
+                          cellspacing="0"
+                          width="100%"
+                        >
+                          <tr class="bg_top">
+                            <td colspan="4">
+                              <div
+                                style="
+                                  padding: 2px;
+                                  color: darkblue;
+                                  font-size: medium;
+                                  font-weight: bold;
+                                "
+                              >
+                                <legend>Declaration</legend>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td
+                              align="left"
+                              style="
+                                font-size: 12px !important;
+                                border: none;
+                                font-weight: bold;
+                              "
+                              width="98%"
+                            >
+                              <div class="form-group">
+                                <input
+                                  class="required"
+                                  data-val="true"
+                                  data-val-required="Required"
+                                  id="bain_1Declaration"
+                                  name="bain_1Declaration"
+                                  type="checkbox"
+                                  value="true"
+                                />
+                                <label for="bain_1Declaration"
+                                  >I HEREBY DECLARE THAT I HAVE READ ALL THE
+                                  INSTRUCTIONS CAREFULLY AND HEREBY UNDERTAKE TO
+                                  ABIDE BY THEM.</label
+                                >
+                                <span
+                                  class="text-danger field-validation-valid"
+                                  data-valmsg-for="bain_1Declaration"
+                                  data-valmsg-replace="true"
+                                ></span>
+                              </div>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <div class="col-sm-1">
+                            <label for="" class="field-title">Captcha </label>
+                          </div>
+                          <div class="col-sm-6">
+                            <div style="display: flex; align-items: center">
+                              <input
+                                maxlength="4"
+                                class="form-control"
+                                style="margin-bottom: 0 !important"
+                                placeholder="Captcha Code"
+                                autocomplete="off"
+                                type="text"
+                                data-val="true"
+                                data-val-length="Invalid Captcha"
+                                data-val-length-max="4"
+                                data-val-required="Required"
+                                id="CaptchaCode"
+                                name="CaptchaCode"
+                                value=""
+                              />
+                              <span
+                                class="text-danger field-validation-valid"
+                                data-valmsg-for="CaptchaCode"
+                                data-valmsg-replace="true"
+                              ></span>
+                              <img
+                                id="img-captcha"
+                                style="height: 42px; border-radius: 6px"
+                                src="/babareg24/get-captcha-image2"
+                              />
+                              <img
+                                src="/babareg24/images/BotDetectCaptcha.gif"
+                                border="0"
+                                style="cursor: pointer; height: 25px"
+                                onclick="javascript:RefreshImage2();"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <BR />
+                      <div class="modal-footer">
+                        <div class="col-md-12">
+                          <div class="col-md-6">
+                            <div class="button-section">
+                              <span class="prev" style="display: inline">
+                                <button
+                                  type="button"
+                                  id="BtnEdit"
+                                  class="btn"
+                                  onclick="return ClearTermsCond();"
+                                  data-dismiss="modal"
+                                >
+                                  Edit Record
+                                  <small>Preliminary Stage</small>
+                                </button>
+                              </span>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="button-section">
+                              <span class="next">
+                                <button
+                                  type="submit"
+                                  name="btnNext"
+                                  onclick="return AcceptTermAndcondition();"
+                                  id="btnNext"
+                                  class="btn"
+                                >
+                                  Submit & Next
+                                  <small></small>
+                                </button>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- end Modal -->
+                <input
+                  name="__RequestVerificationToken"
+                  type="hidden"
+                  value="CfDJ8NLULUhkuW5LhLqHG2mvvZ44i4NDIxrOZhF_d4ZdwCRzlFdwGLjGa5fp99jJiN_dCi8SI2FFkeyZ_W8pBKPMc6DtlTHNtWdpd0tCLHBk9Tg86aLHfvI6skZASewooP9THTBRzqdwyK74-vY13fQRDvE"
+                /><input
+                  name="bain_SameAddr"
+                  type="hidden"
+                  value="false"
+                /><input name="bain_1Declaration" type="hidden" value="false" />
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <footer b-nj29cm8vbb>
+      <section b-nj29cm8vbb style="margin-top: 1em">
+        <div b-nj29cm8vbb class="footer bg-lblue">
+          <p b-nj29cm8vbb>&copy; 2024 - CODEBUCKET SOLUTIONS PRIVATE LIMITED</p>
+          This page is best viewed on Following Browser on Firefox,Chrome and
+          all recent browsers.
+        </div>
+      </section>
+    </footer>
+    <script>
+      // Disable copy and paste for all input elements
+      var inputs = document.getElementsByTagName("input");
+      for (var i = 0; i < inputs.length; i++) {
+        inputs[i].addEventListener("paste", function (e) {
+          e.preventDefault();
+        });
+      }
+
+      // Disable drag and drop for all input elements
+      for (var i = 0; i < inputs.length; i++) {
+        inputs[i].addEventListener("dragover", function (e) {
+          e.preventDefault();
+        });
+
+        inputs[i].addEventListener("drop", function (e) {
+          e.preventDefault();
+        });
+      }
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.12/jquery.validate.unobtrusive.min.js"></script>
+  </body>
+</html>

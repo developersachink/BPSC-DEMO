@@ -1,0 +1,145 @@
+
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+<style>
+      input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+    .bg-color{
+        background-color: #f9fbfd;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .btn-rounded{
+        border-radius: 30px;
+    }
+   a{
+    text-decoration: none;
+    color: white;
+   }
+
+</style>
+</style>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<link href="
+https://cdn.jsdelivr.net/npm/jquery-toast-plugin@1.3.2/dist/jquery.toast.min.css
+" rel="stylesheet">
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<!-- Toastee Plugin -->
+<!-- Use CDN link instead of local script -->
+<script src="
+https://cdn.jsdelivr.net/npm/jquery-toast-plugin@1.3.2/dist/jquery.toast.min.js
+"></script>
+
+</head>
+<!-- font awesome js -->
+
+<%- include('./partials/siderbar.ejs') %>
+<!-- action="/adminlogin/createDoc" -->
+<body class="bg-color">
+    <section class="container mt-5">
+        <div class="row justify-content-md-center">
+            <form  id="register-form"  class="col-md-6 col-sm-12 bg-white p-5 rounded shadow" method="post"  >
+                <div class="col-12 text-center">
+                    <h3 class="text-primary"><strong>Teacher Registration</strong></h3>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" required id="email" name="email">
+                </div>
+                <div class="mb-3">
+                    <label for="mobno" class="form-label">Mobile Number</label>
+                    <input type="number" class="form-control" required id="mobno" name="mobno">
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" required id="password" name="password">
+                </div>
+                <div class="mb-3">
+                    <label for="confirm_password" class="form-label">Confirm Password</label>
+                    <input type="password" class="form-control" required id="confirm_password" name="confirm_password">
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="terms">
+                    <label class="form-check-label" for="terms">I agree terms and conditions.</label>
+                </div>
+                <div class="text-center mt-3">
+                    <button type="submit" class="btn btn-primary btn-rounded w-75">Register Now</button>
+                </div>
+                <div class="mb-3 text-center text-secondary mt-3">
+                Or Continue With Login
+                </div>
+                <div class="mb-3 text-center  mt-3">
+                    <!-- <button type="submit" class="btn btn-danger btn-rounded"><i class="bi bi-google"></i>&nbsp;&nbsp;Google</button> -->
+                    <button id="loginbutton" type="submit" class="btn btn-danger btn-rounded w-65">  <a href="/adminlogin"> Login</a></button> 
+                    <!-- <button type="submit" class="btn btn-primary btn-rounded"><i class="bi bi-linkedin"></i>&nbsp;&nbsp;Linkedin</button> -->
+                </div>
+            </form>
+        </div>
+
+    </section>
+    <div id="toast"></div>
+    <script>
+        $(document).ready(function () {
+          // Function to show the jQuery Toast notification
+          function showToast(message, type) {
+        $.toast({
+          heading: type === 'success' ? 'Success' : 'Error',
+          text: message,
+        
+          showHideTransition: 'fade-out',
+          color: '#fff',
+          icon: type,
+          loader: false,
+          color: '#fff',
+          background: '#28a745',
+               
+          position: 'top-right',
+          width: 900,
+                height:350,
+          hideAfter: 4000,
+          afterHidden: function () {
+                // Reset the form after the toast is hidden
+                $('#register-form')[0].reset();
+              }// auto dismiss after 5 seconds
+          
+        });
+      
+          }
+          // Form submission logic
+          $('#register-form').submit(function (event) {
+            // Prevent the default form submission
+            event.preventDefault();
+      
+            // // Get form data
+            var formData = {
+              email: $('#email').val(),
+              mobno: $('#mobno').val(),
+              password: $('#password').val(),
+              confirm_password: $('#confirm_password').val(),
+             
+            };
+             console.log(formData)
+            $.ajax({
+              url: '/register-form', // Update the URL to match your server endpoint
+              type: 'POST',
+              contentType: 'application/json',
+              data: JSON.stringify(formData),
+              success: function (response) {
+                console.log('Success Response:', response);
+                showToast(response.message, 'success');
+              },
+              error: function (error) {
+                
+                console.log('Error Response:', error);
+
+                showToast('Error submitting data. Please try again.', 'error');
+              },
+            });
+          });
+        });
+      </script>

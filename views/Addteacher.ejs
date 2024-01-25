@@ -1,0 +1,142 @@
+<head>
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <!-- font awesome -->
+  <link rel="stylesheet" href="css/all.css" />
+  <style>
+    #h1{
+        margin-left: 350px;
+        margin-top: -60px;
+        padding: 5px;
+    }
+    .mb-3{
+       padding-left: 270px;
+    }
+  </style>
+   </style>
+   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <link href="
+  https://cdn.jsdelivr.net/npm/jquery-toast-plugin@1.3.2/dist/jquery.toast.min.css
+  " rel="stylesheet">
+  
+ <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+   <!-- Toastee Plugin -->
+<!-- Use CDN link instead of local script -->
+<script src="
+https://cdn.jsdelivr.net/npm/jquery-toast-plugin@1.3.2/dist/jquery.toast.min.js
+"></script>
+
+</head>
+<!-- font awesome js -->
+<script src="js/all.js"></script>
+<!-- js bundle bootstrap -->
+<script src="js/bootstrap.bundle.js"></script>
+<%- include('./partials/siderbar.ejs') %>
+
+
+
+
+
+<!-- Your existing HTML content -->
+
+
+<div class="container">
+  
+  <div class="row">
+    <div class="col-sm-9 mt-5">
+        <h2 id="h1" class="alert alert-success text-center">ADD NEW TEACHER (CLASS 1 TO 6)</h2>
+   
+      
+      <form method="post" id="teacher-form">
+         <div class="mb-3 mt-5">
+         <label for="name" class="form-label">Teacher Name</label>
+         <input type="text" class="form-control" id="name" name="name"></input>
+        </div>
+        <div class="mb-3">
+         <label for="age" class="form-label">Age</label>
+         <input type="text" class="form-control" id="age" name="age">
+        </div>
+        <div class="mb-3">
+         <label for="salary" class="form-label">Salary</label>
+         <input type="text" class="form-control" id="salary" name="salary">
+        </div>
+
+        <div class="mb-3">
+            <label for="schoolname" class="form-label">School Name</label>
+            <input type="text" class="form-control" id="schoolname" name="schoolname">
+           </div>
+
+           <div class="mb-3">
+            <label for="district" class="form-label">District</label>
+            <input type="text" class="form-control" id="district" name="district">
+           </div>
+           
+           <div class="mb-3">
+            <button id="button" type="submit" class="btn btn-primary">SUBMIT</button>
+          </div>
+        </form>
+  
+       
+
+    </div>
+  </div>
+ 
+</div>
+<div id="toast"></div>
+
+<script>
+  $(document).ready(function () {
+    // Function to show the jQuery Toast notification
+    function showToast(message, type) {
+  $.toast({
+    heading: type === 'success' ? 'Data Submitted Successfuly' : 'Error',
+    text: message,
+    message:'Data Submitted Successfuly',
+    showHideTransition: 'fade-out',
+    color: '#fff',
+    icon: type,
+    loader: false,
+    color: '#fff',
+    background: '#28a745',
+         
+    position: 'top-right',
+    width: 900,
+          height:350,
+    hideAfter: 4000,
+    afterHidden: function () {
+          // Reset the form after the toast is hidden
+          $('#teacher-form')[0].reset();
+        }// auto dismiss after 5 seconds
+    
+  });
+
+    }
+    // Form submission logic
+    $('#teacher-form').submit(function (event) {
+      // Prevent the default form submission
+      event.preventDefault();
+
+      // // Get form data
+      var formData = {
+        name: $('#name').val(),
+        age: $('#age').val(),
+        salary: $('#salary').val(),
+        schoolname: $('#schoolname').val(),
+        district: $('#district').val()
+      };
+
+      $.ajax({
+        url: '/submit-form', // Update the URL to match your server endpoint
+        type: 'POST',
+        contentType: 'application/json',
+        data: JSON.stringify(formData),
+        success: function (response) {
+          showToast(response.message, 'success');
+        },
+        error: function (error) {
+          showToast('Error submitting data. Please try again.', 'error');
+        },
+      });
+    });
+  });
+</script>
